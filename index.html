@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Riaz-Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+        <link href="css/custom_styles.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> </head>  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body class="nav-fixed" onload="slider()">
+        <nav class="topnav navbar navbar-expand py-5 justify-content-between bg-scroll-color" id="sidenavAccordion">
+            <div class="container">
+                <!-- Navbar Brand-->
+                <!-- * * Tip * * You can use text or an image for your navbar brand.-->
+                <!-- * * * * * * When using an image, we recommend the SVG format.-->
+                <!-- * * * * * * Dimensions: Maximum height: 32px, maximum width: 240px-->
+                <a class="navbar-brand ml-0 pl-md-0 " href="/index.html">
+                    <img src="/assets/img/logo.png" alt="">
+                </a>
+                            
+                <!-- Navbar Items-->
+                <ul class="navbar-nav ml-auto">
+                    <li class="align-items-center d-none d-sm-block mr-4">
+                        <div class="underline-hover-cont ">
+                            <a class="underline-hover-btn text-decoration-none font-weight-bolder"href="/pages/about-me.html">About</a>
+                        </div>
+                    </li>
+                    <li class="align-items-center d-none d-sm-block mr-4">
+                        <div class="underline-hover-cont">
+                            <a class="underline-hover-btn text-decoration-none font-weight-bolder"href="#work">Work</a>
+                        </div>
+                    </li>
+
+                    <li class="align-items-center d-none d-sm-block">
+                        <div class="underline-hover-cont">
+                            <a class="underline-hover-btn text-decoration-none font-weight-bolder"href="#contact">Contact</a>
+                        </div>
+                    </li>
+                </ul>
+                 <!-- Navbarv Toggle Button-->
+                 <li class="nav-item dropdown no-caret d-md-none d-block mr-3 mr-lg-0">
+                    <a class="btn btn-icon btn-transparent dropdown-toggle" id="navbarDropdownMenu" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bars text-lg text-white"></i>
+                    </a>
+                    <div class="dropdown-menu bg-dark-1 dropdown-menu-right  shadow animated--fade-in-up " aria-labelledby="navbarDropdownMenu">
+                        
+                        <a class="dropdown-item" href="/pages/about-me.html">
+                            <div class="dropdown-item-icon"><i class="fas fa-info-circle mr-2"></i></div>
+                            About
+                        </a>
+                        <a class="dropdown-item" href="#work">
+                            <div class="dropdown-item-icon"><i class="fas fa-briefcase mr-2"></i></div>
+                            Work
+                        </a>
+                        
+                        <a class="dropdown-item" href="#contact">
+                            <div class="dropdown-item-icon"><i class="fas fa-address-book mr-2"></i></div>
+                            Contact
+                        </a>
+                    </div>
+                </li>
+            </div>
+        </nav>
+
+        <main>
+            <div class="banner">
+                <div class="slider">
+                    <img src="/assets/img/2.jpg" id="slidingImg" alt="">                    
+                </div>
+                <div class="overlay">
+                    <div class="after-overlay o-right mr-n5 d-xl-block d-none"><img src="/assets/img/right-top.svg" alt=""></div>
+                    <div class="after-overlay or-bottom mr-n5 d-xl-block d-none"><img src="/assets/img/right-bottom.svg" alt=""></div>
+
+                    
+                    <div class="overlay-svgs"></div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-12">
+                                <div class="banner-content">
+                                    <div class="banner-text">
+                                        <div class="row  text-animated my-auto text-name text-md-left text-center text-white">
+                                            <div class="col-12 ">
+                                                <div class="gradient-text">
+                                                    <p class="ml-lg-n2 font-weight-bolder ">Muhammad Riaz</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <p class="font-weight-bolder">I am <span class="typing-text"></span></p>
+                                            </div>
+                                            <div class="col-12 text-gray-500">
+                                                <p class="mr-lg-0 mr-md-4 mr-0">
+                                                    I design and develop interactive useful, and delightful user interfaces with passion.
+                                                </p>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row mt-5 mb-n5">
+                                                    <div class="col-md-3 col-12 ">
+                                                        <a href="#work" class="text-12 btn-skew-left px-auto py-2 shadow border border-warning text-uppercase font-weight-bolder" >
+                                                            Recent Work
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-md-3 col-12 mt-md-0 mt-3">
+                                                        <a href="/pages/about-me.html" class="text-12 btn-skew-left bg-transparent border border-warning text-white px-auto py-2 shadow text-uppercase font-weight-bolder" >
+                                                            About Me
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 d-md-block d-none">
+                               <div class="profile-image flex-column my-auto ml-auto float-right" data-aos="fade-in">
+                                   <div class="image-border img-gray">
+                                        <img class="shadow shadow-lg" src="/assets/img/riaz.jpg" alt="">
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            <button class="btn btn-icon shadow " onclick="topFunction()" id="myBtn" title="Go to top"><i class="font-weight-bolder fas fa-chevron-up"></i></button>
+            <div class="work bg-dark-1 " id="work">
+                <div class="pattern-bg ">
+                    <div class="container ">
+                        <div class="row text-white ">
+                            <div class="col-md-6 col-12 text-cont text-md-left text-center" data-aos="fade-in">
+                                <div class="row flex-column  mb-md-0 mb-5">
+                                    <div class="col-12 text-12">
+                                        <p class="text-uppercase font-weight-700 text-gray-500">
+                                            Shining Stars Promotors
+                                        </p>
+                                    </div>
+                                    <div class="col-12  t-orange font-lg font-weight-bolder">
+                                        <p >
+                                            Data Management Web Application
+                                        </p>
+                                    </div>
+                                    <div class="col-12 text-gray-300">
+                                        <p>
+                                            It’s a web based application, which is used to store and manage 
+                                            data for a system which promotes Amazon products arround the world.
+                                        </p>
+                                    </div>
+                                    <div class="col-12 mt-md-0 mt-2">
+                                        <a class="text-12 btn-skew-left float-md-left  px-auto py-2 shadow text-uppercase font-weight-bolder" href="/pages/ssm-case-study.html">
+                                            Case Study <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 centerTB ">
+                                <div class="casestudy-img ml-md-auto mt-md-0 mt-2" data-aos="fade-left">
+                                    <img src="/assets/img/casestudy-img1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="contact" class="contact bg-dark-1 ">
+                <div class="world-map">
+                    <div class="container ">
+                        <div class="row  ">
+                            <div class="col-12 text-center">
+                                <h4 class="t-orange text-letter-spacing font-weight-bolder text-lg">Let's Chat!</h4>
+                                <p class="text-light">I would love to chat with you about new opportunities and designs.</p>
+                                
+                                <p class="  text-12">
+                                    <a class="mail-me " href = "mailto: riazafridi425@gmail.com"><i class="fas fa-envelope mr-2"></i>riazafridi425@gmail.com</a>
+                                </p>
+
+                                <p class="  text-12 ">
+                                    <a class="call-to" href="tel:+92 314-9414161"><i class="fas fa-phone mr-2"></i> +92 314-9414161</a>
+                                </p>
+                               
+                                <div class="line-sm w-25 mx-auto mb-2"></div>
+
+                                <p class="text-gray-500 text-12">Also available on</p>
+                                <div class="">
+                                    <!-- Social links-->
+                                    <a class="btn btn-icon btn-sm  text-sm btn-warning mx-1  border-0" href="https://web.facebook.com/im.riaz.1"><i class="fab fa-facebook-f fa-fw fa-sm"></i></a>
+                                    <a class="btn btn-icon btn-sm text-sm btn-warning mx-1 border-0" href="https://github.com/Muhammad-Riaz"><i class="fab fa-github fa-fw fa-sm"></i></a>
+                                    <a class="btn btn-icon btn-sm text-sm btn-warning mx-1 border-0" href="https://www.linkedin.com/in/muhammad-riaz-84a085172/"><i class="fab fa-linkedin-in fa-fw fa-sm"></i></a>
+                                </div>
+
+                            </div>
+
+                            <div class="line-sm d-md-none mx-auto  d-block w-50 "></div>
+                        </div>
+                        <div class="  "></div>
+                        <div class="text-center  text-gray-500 copyright-text mt-5">
+                            <p>	&copy Copyright 2021 by Riaz</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/typed.js"></script>
+        <script src="js/scripts.js"></script>
+        <script>
+            AOS.init({
+                easing:'ease',
+                once:true,
+                duration:2000
+            });
+        </script>
+        
+    </body>
+</html>
