@@ -9,15 +9,18 @@
         <title>Riaz-Portfolio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800;900&display=swap" rel="stylesheet">
         <link href="/css/custom_styles.css" rel="stylesheet" />
         <link href="/css/styles.css" rel="stylesheet" />
+        <link href="/css/owl.carousel.css " rel="stylesheet" >
+        <link href="/css/owl.theme.green.css " rel="stylesheet" >
         <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> </head>  
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" crossorigin="anonymous"></script>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
-    <body class="nav-fixed" onload="slider()">
+    <body class="nav-fixed">
         <nav class="topnav navbar navbar-expand py-5 justify-content-between bg-scroll-color" id="sidenavAccordion">
             <div class="container">
                 <!-- Navbar Brand-->
@@ -135,24 +138,29 @@
 
             
             <button class="btn btn-icon shadow " onclick="topFunction()" id="myBtn" title="Go to top"><i class="font-weight-bolder fas fa-chevron-up"></i></button>
-            
-            
-            <div id="contact" class="contact bg-dark-1">
+
+            <div id="contact" class="contact bg-dark-1 ">
                 <div class="world-map">
                     <div class="container ">
                         <div class="row  ">
                             <div class="col-12 text-center">
                                 <h4 class="t-orange text-letter-spacing font-weight-bolder text-lg">Let's Chat!</h4>
                                 <p class="text-light">I would love to chat with you about new opportunities and designs.</p>
-                                
-                                <p class="  text-12">
-                                    <a class="mail-me " href = "mailto: riazafridi425@gmail.com"><i class="fas fa-envelope mr-2"></i>riazafridi425@gmail.com</a>
-                                </p>
-
-                                <p class="  text-12 ">
-                                    <a class="call-to" href="tel:+92 314-9414161"><i class="fas fa-phone mr-2"></i> +92 314-9414161</a>
-                                </p>
-                               
+                                <div class="row justify-content-center">
+                                    <div class="col-md-3 col-12"></div>
+                                    <div class="col-md-3 col-8 ">
+                                        <p class="text-12 bg-gray-700 rounded py-1">
+                                            <a class="mail-me" href = "mailto: riazafridi425@gmail.com"><i class="fas fa-envelope mr-2"></i>riazafridi425@gmail.com</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 col-8">
+                                        <p class=" text-12 bg-gray-700 rounded py-1">
+                                            <a class="call-to" href="tel:+92 314-9414161"><i class="fas fa-phone mr-2"></i> +92 314-9414161</a>
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="col-md-3 col-"></div>
+                                </div>
                                 <div class="line-sm w-25 mx-auto mb-2"></div>
 
                                 <p class="text-gray-500 text-12">Also available on</p>
@@ -165,11 +173,11 @@
 
                             </div>
 
-                            <div class="line-sm d-md-none mx-auto  d-block w-50 my-5"></div>
                         </div>
-                        <div class="  mt-15 "></div>
-                        <div class="text-center  text-gray-500 copyright-text mt-15">
-                            <p>	&copy Copyright 2021 by Riaz</p>
+                        <div class="  "></div>
+                        <div class="text-center  text-gray-500 copyright-text mt-5">
+                            <p>Copyright &copy 2021 reserved by </p>
+                            <span class="sign text-xl t-orange"> Riaz.</span>
                         </div>
                     </div>
                 </div>
@@ -183,16 +191,39 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="/js/typed.js"></script>
         <script src="/js/scripts.js"></script>
+        <script src="/js/owl.carousel.min.js"></script>
         <script>
             AOS.init({
                 easing:'ease',
                 once:true,
                 duration:3000
             });
+
+            $(document).ready(function(){
+                $('.owl-carousel').owlCarousel({
+                    items:3,
+                    margin:10,
+                    nav:true,
+                    loop:true,
+                    autoWidth:true,
+                    center:true,
+                    autoplay:true,
+                    autoplayTimeout:10000,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:1
+                        },
+                        1000:{
+                            items:3
+                        }
+                    }
+                });
+            });
+            
         </script>
         
     </body>
 </html>
-
-                        
-                

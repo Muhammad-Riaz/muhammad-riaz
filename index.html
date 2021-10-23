@@ -9,9 +9,12 @@
         <title>Riaz-Portfolio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800;900&display=swap" rel="stylesheet">
-        <link href="css/custom_styles.css" rel="stylesheet" />
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="/css/styles.css" rel="stylesheet" />
+        <link href="/css/owl.carousel.css " rel="stylesheet" >
+        <link href="/css/owl.theme.green.css " rel="stylesheet" >
+        <link href="/css/custom_styles.css" rel="stylesheet" />
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> </head>  
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" crossorigin="anonymous"></script>
@@ -128,6 +131,9 @@
                                    </div>
                                 </div>
                             </div>
+                            <div class="col-12 text-center mt-n10 ">
+                                <a href="#work" class="scroll-andicator-btn"> <i class="fas fa-chevron-down"></i> </a>
+                            </div>
                         </div>
                     </div>   
                 </div>
@@ -136,11 +142,18 @@
             <div class="work bg-dark-1 " id="work">
                 <div class="pattern-bg ">
                     <div class="container ">
+                        <div class="row justify-content-center my-5">
+                            <div class="col-12 text-center text-gray-700 font-weight-600">
+                                <p class="recent-work-title text-center">
+                                    Recent Work
+                                </p>
+                            </div>
+                        </div>
                         <div class="row text-white ">
                             <div class="col-md-6 col-12 text-cont text-md-left text-center" data-aos="fade-in">
                                 <div class="row flex-column  mb-md-0 mb-5">
                                     <div class="col-12 text-12">
-                                        <p class="text-uppercase font-weight-700 text-gray-500">
+                                        <p class="text-uppercase font-weight-700 text-gray-700">
                                             Shining Stars Promotors
                                         </p>
                                     </div>
@@ -171,6 +184,78 @@
                     </div>
                 </div>
             </div>
+            <div class="all-work bg-dark-1 " id="all-work">
+                <div class="bg-other-work">
+                    <div class="container py-15">
+                        <div class="row "  data-aos="fade-right">
+                            <div class="col-md-8 col-12">
+                                <div class="row flex-column  mb-md-0 mb-5">
+                                    <div class="col-12  t-orange font-lg font-weight-bolder my-4">
+                                        <p >
+                                            Other Projects
+                                        </p>
+                                    </div>
+                                    <div class="col-12 text-gray-300">
+                                        <p>
+                                            These are the projects I have worked on. 
+                                            Projects are Logos Designs, UI/UX Designs and Frontend.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        
+                        <div class="row"  data-aos="fade-up">
+                            <div class="col-12">
+                                <div class="owl-carousel owl-theme work-item">
+                                    <div class="item mx-1">
+                                        <div class="overlay-container mx-auto">
+                                            <img class="" src="/assets/img/EVG.png" alt="">
+                                            <a href="#!">
+                                                <div class="container-content">
+                                                    <p class="work-title text-12 font-weight-600">
+                                                        Evergreen Traders
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="item mx-1">
+                                        <div class="overlay-container mx-auto">
+                                            <img class=" " src="/assets/img/qisa-khwanaan.png" alt="">
+                                            <a href="#!">
+                                                <div class="container-content">
+                                                    <p class="work-title text-12 font-weight-600">
+                                                        Qissa Khwanaan
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+    
+                                    <div class="item mx-1">
+                                        <div class="overlay-container mx-auto">
+                                            <img class=" " src="/assets/img/quizzy.png" alt="">
+                                            <a href="#!">
+                                                <div class="container-content">
+                                                    <p class="work-title text-12 font-weight-600">
+                                                        Quizy
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
             
             <div id="contact" class="contact bg-dark-1 ">
                 <div class="world-map">
@@ -179,15 +264,21 @@
                             <div class="col-12 text-center">
                                 <h4 class="t-orange text-letter-spacing font-weight-bolder text-lg">Let's Chat!</h4>
                                 <p class="text-light">I would love to chat with you about new opportunities and designs.</p>
-                                
-                                <p class="  text-12">
-                                    <a class="mail-me " href = "mailto: riazafridi425@gmail.com"><i class="fas fa-envelope mr-2"></i>riazafridi425@gmail.com</a>
-                                </p>
-
-                                <p class="  text-12 ">
-                                    <a class="call-to" href="tel:+92 314-9414161"><i class="fas fa-phone mr-2"></i> +92 314-9414161</a>
-                                </p>
-                               
+                                <div class="row justify-content-center">
+                                    <div class="col-md-3 col-12"></div>
+                                    <div class="col-md-3 col-8 ">
+                                        <p class="text-12 bg-gray-700 rounded py-1">
+                                            <a class="mail-me" href = "mailto: riazafridi425@gmail.com"><i class="fas fa-envelope mr-2"></i>riazafridi425@gmail.com</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 col-8">
+                                        <p class=" text-12 bg-gray-700 rounded py-1">
+                                            <a class="call-to" href="tel:+92 314-9414161"><i class="fas fa-phone mr-2"></i> +92 314-9414161</a>
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="col-md-3 col-"></div>
+                                </div>
                                 <div class="line-sm w-25 mx-auto mb-2"></div>
 
                                 <p class="text-gray-500 text-12">Also available on</p>
@@ -200,11 +291,11 @@
 
                             </div>
 
-                            <div class="line-sm d-md-none mx-auto  d-block w-50 "></div>
                         </div>
                         <div class="  "></div>
                         <div class="text-center  text-gray-500 copyright-text mt-5">
-                            <p>	&copy Copyright 2021 by Riaz</p>
+                            <p>Copyright &copy 2021 reserved by </p>
+                            <span class="sign text-xl t-orange"> Riaz.</span>
                         </div>
                     </div>
                 </div>
@@ -216,14 +307,40 @@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="js/typed.js"></script>
-        <script src="js/scripts.js"></script>
+        <script src="/js/typed.js"></script>
+        <script src="/js/scripts.js"></script>
+        <script src="/js/owl.carousel.min.js"></script>
         <script>
             AOS.init({
                 easing:'ease',
                 once:true,
-                duration:2000
+                duration:3000
             });
+
+            $(document).ready(function(){
+                $('.owl-carousel').owlCarousel({
+                    items:3,
+                    margin:10,
+                    nav:true,
+                    loop:true,
+                    autoWidth:true,
+                    center:true,
+                    autoplay:true,
+                    autoplayTimeout:10000,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:1
+                        },
+                        1000:{
+                            items:3
+                        }
+                    }
+                });
+            });
+            
         </script>
         
     </body>

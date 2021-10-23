@@ -12,11 +12,15 @@
 
 *{
   font-family: 'Montserrat', sans-serif;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 html{
   scroll-behavior: smooth;
 }
-img {
+img, a{
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
@@ -797,6 +801,225 @@ img {
 }
 
 
+.scroll-andicator-btn{
+  color: var(--orgClr);
+  position: relative;
+  transition: all 0.5s ease-in;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.scroll-andicator-btn:hover{
+  color: #d48a00;
+}
+
+.scroll-andicator-btn::after{
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f078";
+  color: var(--orgClr);
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  transition: all 0.5s ease-in;
+  animation: animateDown 1s ease-in infinite;
+}
+
+@keyframes animateDown {
+  0%{
+    top: 1px;
+    opacity: 1;
+  }
+  20%{
+    top: 3px;
+    opacity: 0.9;
+  }
+  30%{
+    top: 5px;
+    opacity: 0.8;
+  }
+  
+  40%{
+    top: 7px;
+    opacity: 0.7;
+
+  }
+
+  50%{
+    top: 9px;
+    opacity: 0.6;
+  }
+  60%{
+    top: 11px;
+    opacity: 0.5;
+  }
+  70%{
+    top: 13px;
+    opacity: 0.4;
+  }
+  80%{
+    top: 15px;
+    opacity: 0.3;
+  }
+  
+  90%{
+    top: 17px;
+    opacity: 0.2;
+
+  }
+
+  100%{
+    top:19px;
+    opacity: 0.1;
+  }
+}
+
+
+.overlay-container{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+}
+.overlay-container img{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.overlay-container::before{
+  position: absolute;
+  content: "";
+  top: -50%;
+  left: 0;
+  opacity: 0.2;
+  height: 50%;
+  width: 100%;
+  z-index: 111;
+  background-color: var(--orgClr);
+  transition: all 0.5s ease-in;
+}
+.overlay-container:hover:before{
+  top: 0;
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+
+.overlay-container::after{
+  position: absolute;
+  content: "";
+  bottom: -50%;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  opacity: 0.2;
+  z-index: 111;
+  background-color: var(--orgClr);
+  transition: all 0.5s ease-in;
+}
+.overlay-container:hover::after{
+  bottom: 0;
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+.container-content{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  color: #ffffff;
+  top: 0;
+  z-index: 200;
+  transition: all 0.5s ease-in;
+}
+
+
+.overlay-container:hover .container-content{
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+
+
+.bg-other-work{
+  background: url(/assets/img/pattern-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.recent-work-title{
+  border: 1px solid var(--dark-4);
+  border-style: dotted;
+  width: 150px;
+  padding: 3px;
+  margin: 0px auto;
+  
+}
+
+.sign{
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-size: 20px;
+}
+
+
+.owl-carousel .item{
+  width: 400px;
+}
+
+.arch-item .item{
+  width: 700px;
+}
+
+.work-item .item{
+  width: 300px;
+}
+/*
+.container-content{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s ease-in;
+}
+
+.container-content img{
+  width: 100%;
+  height: 100%;
+
+}
+
+
+
+
+.container-content::after{
+  position: absolute;
+  content: "Some Text";
+  top: 0;
+  left: 0;
+  z-index: 11;
+  background: var(--orgClr);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+
+.container-content:hover::after{
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}*/
+
+
 @media (max-width: 992px) {
   .cancel-btn{
     position: absolute;
@@ -805,6 +1028,12 @@ img {
     transform: translate(-50%,-20%);
   
   }
+
+  
+  
+.arch-item .item{
+  width: 400px;
+}
 
   .name-title{
   font-size: 45px;
@@ -833,7 +1062,7 @@ img {
     position: absolute;
     font-size: 10px;
     font-weight: 700;
-    content: "Create Account (admin)";
+    content: "";
     color: white;
     text-align: center;
     display: flex;
@@ -898,7 +1127,7 @@ img {
     position: absolute;
     font-size: 10px;
     font-weight: 700;
-    content: "Create Account (admin)";
+    content: " ";
     color: white;
     text-align: center;
     display: flex;
