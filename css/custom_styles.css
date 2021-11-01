@@ -976,6 +976,13 @@ img, a{
 .work-item .item{
   width: 300px;
 }
+
+.container embed{
+  width: 100%;
+  height: 420vh;
+}
+
+
 /*
 .container-content{
   width: 300px;
