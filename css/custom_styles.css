@@ -927,14 +927,13 @@ img, a{
 }
 .container-content{
   height: 100%;
-  width: 100%;
+  width: 120px;
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   opacity: 0;
   color: #ffffff;
-  top: 0;
+  top: 45%;
+  left: 10%;
+  text-align: center;
   z-index: 200;
   transition: all 0.5s ease-in;
 }
